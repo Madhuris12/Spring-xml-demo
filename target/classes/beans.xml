@@ -1,0 +1,27 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <bean id ="movie" class="com.stackroute.spring.beans.Movie" scope="prototype">
+
+        <constructor-arg name="movieName" value="Hebbuli" />
+
+        <constructor-arg name="actorNAme" value="Sudeep" />
+
+        <constructor-arg name="genre" value="Action" />
+
+
+    </bean>
+
+<bean id = "actor" class="com.stackroute.spring.beans.Actor" scope="prototype">
+<property name="name" value="Sudeep"/>
+<property name="gender" value="male"/>
+<property name="age" value="40"/>
+
+
+</bean>
+</beans>

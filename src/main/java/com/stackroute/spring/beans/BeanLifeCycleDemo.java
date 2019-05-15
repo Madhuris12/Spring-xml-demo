@@ -12,10 +12,5 @@ public class BeanLifeCycleDemo implements InitializingBean, DisposableBean  {
         public void afterPropertiesSet() throws Exception {
             System.out.println("Bean has been initialised");
         }
-        public void customInit(){
-            System.out.println("This is custom init method");
-        }
-        public void customDestroy(){
-            System.out.println("This is custom destroy method");
-        }
+
     }

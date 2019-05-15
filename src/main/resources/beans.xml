@@ -16,5 +16,8 @@
             <ref bean="actor"></ref>
         </property>
     </bean>
+    <bean id="beanLifeCycleDemo" class="com.stackroute.spring.beans.BeanLifeCycleDemo" init-method="afterPropertiesSet" destroy-method="destroy"/>
+    <bean id="beanLifecycleDemo" class="com.stackroute.spring.beans.BeanPostProcessorDemo"/>
 
 </beans>
+

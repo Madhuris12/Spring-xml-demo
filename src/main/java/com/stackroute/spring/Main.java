@@ -8,14 +8,16 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Main {
         public static void main(String[] args) {
-            ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
-            Movie beanA = (Movie) context.getBean("MovieA");
-            Movie beanB = (Movie) context.getBean("MovieB");
-            Movie beanC = (Movie) context.getBean("MovieC");
-            System.out.println(beanA.toString());
-            System.out.println(beanB.toString());
-            System.out.println(beanC.toString());
+            ApplicationContext applicationContext3=new ClassPathXmlApplicationContext("beans.xml");
 
-            System.out.println(beanA==beanB);
+
+            Movie movie=(Movie)applicationContext3.getBean("movie4");
+
+            System.out.println(movie.toString());
+
+            Movie movie1=(Movie)applicationContext3.getBean("movie5");
+            System.out.println(movie1.toString());
+
+
         }
 }

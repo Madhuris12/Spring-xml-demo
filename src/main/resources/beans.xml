@@ -7,28 +7,24 @@
 
     <!-- bean definitions here -->
 
-   <bean id ="actor1" class="com.stackroute.spring.beans.Actor">
-        <constructor-arg index="0" name="name" value="Darshan" type="String" />
-        <constructor-arg index="1" name="gender" value="Male" type="String" />
-        <constructor-arg index="2" name="age" value="40" type="int" />
-    </bean>
-    <bean id ="actor3" class="com.stackroute.spring.beans.Actor">
-        <constructor-arg index="0" name="name" value="Sudeep" type="String" />
-        <constructor-arg index="1" name="gender" value="Male" type="String" />
-        <constructor-arg index="2" name="age" value="40" type="int" />
+      <bean id="movie4" autowire="byType" class="com.stackroute.spring.beans.Movie">
+        <property name="movieName" value="Prabhas"></property>
+        <property name="director" value="Bahubali"></property>
     </bean>
 
-    <bean name="MovieA, MovieB" class="com.stackroute.spring.beans.Movie" scope="prototype" >
-        <constructor-arg index="0" name="actor" ref="actor1" type="Actor" />
+
+
+    <bean id="movie5" autowire="byName" class="com.stackroute.spring.beans.Movie">
+        <property name="movieName" value="Prabhas"></property>
+        <property name="director" value="Bahubali"></property>
     </bean>
 
-    <bean id ="actor2" class="com.stackroute.spring.beans.Actor">
-        <constructor-arg index="0" name="name" value="Radhika" type="String" />
-        <constructor-arg index="1" name="gender" value="Female" type="String" />
-        <constructor-arg index="2" name="age" value="35" type="int" />
+    <bean id="actor" class="com.stackroute.spring.beans.Actor">
+        <property name="name" value="Prabhas"></property>
+        <property name="age" value="35"></property>
+        <property name="gender" value="male"></property>
     </bean>
 
-    <bean id="MovieC" class="com.stackroute.spring.beans.Movie" scope="prototype" >
-        <constructor-arg index="0" name="actor" ref="actor3" type="Actor"/>
-    </bean>
+
+
 </beans>

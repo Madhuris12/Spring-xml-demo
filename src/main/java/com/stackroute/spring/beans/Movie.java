@@ -1,55 +1,31 @@
 package com.stackroute.spring.beans;
 
 public class Movie {
-    private String movieName;
-    private String actorNAme;
-    private String genre;
+    Actor actor;
 
-    public Movie() {
+    Movie() {
 
     }
 
-    public Movie(String movieName, String actorNAme, String genre) {
-        this.movieName = movieName;
-        this.actorNAme = actorNAme;
-        this.genre = genre;
+    Movie(Actor actor) {
+        this.actor = actor;
     }
 
-    public String getMovieName() {
-        return movieName;
+    public Actor getActor() {
+        return actor;
     }
 
-    public void setMovieName(String movieName) {
-        this.movieName = movieName;
-    }
-
-    public String getActorNAme() {
-        return actorNAme;
-    }
-
-    public void setActorNAme(String actorNAme) {
-        this.actorNAme = actorNAme;
-    }
-
-    public String getGenre() {
-        return genre;
-    }
-
-    public void setGenre(String genre) {
-        this.genre = genre;
-    }
-
-    public  String welcomeMsg () {
-        return "Welcome !!!";
+    public void setActor(Actor actor) {
+        this.actor = actor;
     }
 
     @Override
     public String toString() {
-        return "Movie Information "+
-                "movieName='" + movieName + '\'' +
-                ", actorNAme='" + actorNAme + '\'' +
-                ", genre='" + genre + '\'' +
+        return "Movie{" +
+                "actor=" + actor +
                 '}';
     }
 }
 
+
+    

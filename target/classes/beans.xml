@@ -7,9 +7,9 @@
 
     <!-- bean definitions here -->
     <bean id="actor" class="com.stackroute.spring.beans.Actor">
-        <property name="name" value="Akshay Kumar"/>
+        <property name="name" value="Sudeep"/>
         <property name="gender" value="Male"/>
-        <property name="age" value="51"/>
+        <property name="age" value="45"/>
     </bean>
     <bean id="movie" class="com.stackroute.spring.beans.Movie">
         <property name="actor">
